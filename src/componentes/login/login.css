@@ -1,0 +1,90 @@
+:root{
+    --primer-color: rgb(141, 24, 29);
+    --segun-color:rgb(221, 104, 80);
+    --tercer-color:rgb(244, 189, 164);
+    --cuarto-color:rgb(236, 226, 216);
+}
+
+.contenedor-form{
+    width: 420px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+   /*  backdrop-filter: contrast(80%); */
+   background-color: rgba(141, 24, 30, 0.3) ;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.contenedor-form h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.contenedor-form .contenedor-input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.contenedor-input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 48px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.contenedor-input input::placeholder{
+    color: #fff;
+
+}
+
+.contenedor-input .icon{
+    position:  absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.contenedor-form button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 48px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size:  16px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contenedor-form .contenedor-registro {
+    display: flex;
+    justify-content:space-evenly ;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor-registro a{
+    text-decoration: none;
+    color: rgb(141, 24, 29);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.contenedor-mensaje{
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgb(141, 24, 29);
+    font-weight: 600;
+
+}
