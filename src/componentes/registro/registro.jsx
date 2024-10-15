@@ -5,6 +5,7 @@ import Login from '../login/login';
 
 
 const Registro = () => {
+  const [name, setName] = useState('');
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -30,7 +31,7 @@ const Registro = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ username, email, password }),
+        body: JSON.stringify({ name, username, email, password }),
       });
 
       const data = await response.json();
@@ -51,6 +52,12 @@ const Registro = () => {
   return (
     <form onSubmit={handleRegister} className='contenedor-form'>
       <h1>Registro</h1>
+
+      <div className='contenedor-input'>
+        <input id='name' type="text" placeholder="Su nombre" value={name} onChange={(e) => setName(e.target.value)} required />
+        <FaUser className="icon" />
+      </div>
+
       <div className='contenedor-input'>
         <input id='username' type="text" placeholder="Nombre de usuario" value={username} onChange={(e) => setUsername(e.target.value)} required />
         <FaUser className="icon" />
